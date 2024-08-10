@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Secreta</title>
+
 </head>
 <body>
     <h1>Bienvenido a la página secreta</h1>
     <p>¡Has accedido correctamente!</p>
+    
+    <script>
+        // Verifica si el usuario ya ha iniciado sesión
+        if (localStorage.getItem("loggedIn")) {
+            // Si está logueado, redirige a la página protegida
+            window.location.href = "protected.html";
+        }
+    </script>
 </body>
 </html>

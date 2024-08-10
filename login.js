@@ -6,6 +6,7 @@ function logueo(event) {
     const errorMessage = document.getElementById("error-message");
 
     if (inputPassword === correctPassword) {
+        localStorage.setItem("loggedIn", "true");
         window.location.href = "pagina_secreta.html"; // Redirecciona a la página secreta
     } else {
         errorMessage.style.display = "block"; // Muestra el mensaje de error
