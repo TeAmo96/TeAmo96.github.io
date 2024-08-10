@@ -13,8 +13,10 @@
     <script>
         // Verifica si el usuario ya ha iniciado sesión
         if (localStorage.getItem("loggedIn")) {
-            // Si está logueado, redirige a la página protegida
-            window.location.href = "protected.html";
+            window.location.href = "welcome.html";
+        }
+        else{
+            window.location.href = "index.html";
         }
     </script>
 </body>
